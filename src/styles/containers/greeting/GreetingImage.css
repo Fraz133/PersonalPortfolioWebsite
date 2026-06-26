@@ -1,0 +1,201 @@
+.greeting-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Concentric circles (ripple effect) */
+.ripple-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 40px; /* Thick borders for the concentric rings */
+  opacity: 0.15; /* Transparency */
+  animation: rippleBreath 8s ease-in-out infinite alternate;
+}
+
+.ripple-1 {
+  width: 300px;
+  height: 300px;
+  animation-delay: 0s;
+}
+
+.ripple-2 {
+  width: 450px;
+  height: 450px;
+  animation-delay: 0.5s;
+}
+
+.ripple-3 {
+  width: 600px;
+  height: 600px;
+  animation-delay: 1s;
+}
+
+.ripple-4 {
+  width: 750px;
+  height: 750px;
+  animation-delay: 1.5s;
+}
+
+.ripple-5 {
+  width: 900px;
+  height: 900px;
+  animation-delay: 2s;
+}
+
+/* Image Wrapper */
+.greeting-image-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* The actual image */
+.greeting-fraz-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.greeting-image-wrapper:hover .greeting-fraz-image {
+  transform: scale(1.03);
+}
+
+/* Floating Badges */
+.floating-badge {
+  position: absolute;
+  z-index: 3;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Google Sans Bold", sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+  transform: translateY(0px) rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.floating-badge svg {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.badge-react {
+  top: 15%;
+  left: 2%;
+  animation: floatReact 4s ease-in-out infinite;
+}
+
+.badge-js {
+  bottom: 20%;
+  left: -5%;
+  animation: floatJS 4.5s ease-in-out infinite 0.5s;
+}
+
+.badge-code {
+  top: 25%;
+  right: -5%;
+  animation: floatCode 5s ease-in-out infinite 1s;
+}
+
+.badge-ai {
+  bottom: 12%;
+  right: 5%;
+  animation: floatAI 3.8s ease-in-out infinite 0.2s;
+}
+
+/* Animations */
+@keyframes floatReact {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes floatJS {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-4deg);
+  }
+}
+
+@keyframes floatCode {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatAI {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+  .floating-badge {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .badge-react {
+    top: 5%;
+    left: -5%;
+  }
+  .badge-js {
+    bottom: 5%;
+    left: -5%;
+  }
+  .badge-code {
+    top: 5%;
+    right: -5%;
+  }
+  .badge-ai {
+    bottom: 5%;
+    right: -5%;
+  }
+}

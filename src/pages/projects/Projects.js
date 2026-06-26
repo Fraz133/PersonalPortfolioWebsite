@@ -2,19 +2,18 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
 import {
   greeting,
   projectsHeader,
-  publicationsHeader,
-  publications,
+  competitiveProjects,
 } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
-import "./Projects.css";
+import "../../styles/pages/projects/Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import HackathonCard from "../../components/hackathonCard/HackathonCard";
 
 class Projects extends Component {
   render() {
@@ -26,7 +25,7 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
+                {/* <img loading="lazy"
 											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
 											alt=""
 										/> */}
@@ -62,35 +61,35 @@ class Projects extends Component {
           theme={theme}
         />
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
+        {/* Competitions & Hackathons Section */}
+        {competitiveProjects.hackathons &&
+          competitiveProjects.hackathons.length > 0 && (
+            <div className="basic-projects" style={{ marginTop: "80px" }}>
+              <Fade bottom duration={2000} distance="40px">
+                <h1
+                  className="projects-heading-text"
+                  style={{ color: theme.text }}
+                >
+                  {competitiveProjects.title}
+                </h1>
+                <p
+                  className="projects-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText, marginBottom: "40px" }}
+                >
+                  {competitiveProjects.subtitle}
+                </p>
+              </Fade>
+              <div className="hackathons-container">
+                {competitiveProjects.hackathons.map((hackathon, index) => (
+                  <HackathonCard
+                    key={index}
+                    hackathon={hackathon}
+                    theme={theme}
+                  />
+                ))}
               </div>
-            </Fade>
-          </div>
-        ) : null}
-
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
-        </div>
+            </div>
+          )}
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />

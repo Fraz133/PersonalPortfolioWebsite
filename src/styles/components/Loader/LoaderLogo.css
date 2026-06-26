@@ -1,0 +1,55 @@
+.raw_logo {
+  height: 305px;
+  width: 440px;
+}
+
+.myHexagon {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: drawHexagon 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.2s;
+}
+
+.logo_text {
+  opacity: 0;
+  transform: scale(0.5);
+  transform-origin: 225px 120px;
+  animation: popText 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards 0.8s;
+}
+
+.logo_signature {
+  opacity: 0;
+  transform: translateY(20px);
+  transform-origin: 225px 270px;
+  animation: slideUpText 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 1.2s;
+}
+
+@keyframes drawHexagon {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes popText {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUpText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CompetitiveSites.css";
+import "../../styles/components/competitiveSites/CompetitiveSites.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class CompetitiveSites extends React.Component {
@@ -35,6 +35,7 @@ class CompetitiveSites extends React.Component {
                     )}
                     {!logo.iconifyClassname && logo.imageSrc && (
                       <img
+                        loading="lazy"
                         className="skill-image"
                         style={logo.style}
                         src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}

@@ -3,7 +3,7 @@ import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
 import TopButton from "../../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import "./Error.css";
+import "../../../styles/pages/errors/error404/Error.css";
 import { Link } from "react-router-dom";
 
 export default class Error extends Component {

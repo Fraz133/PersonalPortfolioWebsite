@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./PullRequests.css";
+import "../../styles/containers/pullRequests/PullRequests.css";
 import { Fade } from "react-reveal";
 import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
 import pullRequestsData from "../../shared/opensource/pull_requests.json";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ExperienceCard.css";
+import "../../styles/components/experienceCard/ExperienceCard.css";
 import { Fade } from "react-reveal";
 
 class ExperienceCard extends Component {
@@ -15,11 +15,18 @@ class ExperienceCard extends Component {
       >
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
-            <img
-              className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
-            />
+            <a
+              href={experience["company_url"]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                loading="lazy"
+                className="experience-card-logo"
+                src={require(`../../assets/images/${experience["logo_path"]}`)}
+                alt=""
+              />
+            </a>
           </div>
         </Fade>
         <div className="experience-card-stepper">

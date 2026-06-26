@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./DegreeCard.css";
+import "../../styles/components/degreeCard/DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 
 class DegreeCard extends Component {
@@ -10,8 +10,14 @@ class DegreeCard extends Component {
       <div className="degree-card">
         {degree.logo_path && (
           <Flip left duration={2000}>
-            <div className="card-img">
+            <div
+              className="card-img"
+              style={{
+                backgroundColor: "#ffffff",
+              }}
+            >
               <img
+                loading="lazy"
                 style={{
                   maxWidth: "100%",
                   maxHeight: "100%",

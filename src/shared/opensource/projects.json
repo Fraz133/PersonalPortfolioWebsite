@@ -1,55 +1,23 @@
 {
   "data": [
     {
-      "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
-      "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "id": "project-orzeh-landing",
+      "name": "Orzeh Technologies Landing Page",
+      "createdAt": "2026-05-15T00:00:00Z",
+      "url": "https://orzeh.tech",
+      "description": "Interactive corporate landing pages built to showcase high-performance services in AI Security, Data Engineering, and ERP Odoo implementations.",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "React",
+          "iconifyClass": "logos:react"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
+          "name": "HTML5",
           "iconifyClass": "logos-html-5"
         },
         {
-          "name": "CSS",
+          "name": "CSS3",
           "iconifyClass": "logos-css-3"
         },
         {
@@ -57,66 +25,220 @@
           "iconifyClass": "logos-javascript"
         },
         {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Tailwind CSS",
+          "iconifyClass": "logos:tailwindcss"
         }
       ]
     },
     {
-      "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "id": "project-social-automation",
+      "name": "Social Media Automation",
+      "createdAt": "2026-04-10T00:00:00Z",
+      "url": "https://socialtest.orzeh.tech",
+      "description": "Automated cross-platform scheduling and posting system (X/Twitter, Facebook, Instagram) integrated with Gemini and OpenAI for AI content generation.",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "React",
+          "iconifyClass": "logos:react"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
+          "name": "Python",
+          "iconifyClass": "logos-python"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "SQLite",
+          "iconifyClass": "logos:sqlite"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos:docker"
         }
       ]
     },
     {
-      "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "id": "project-tdm-puf",
+      "name": "TDM-PUF Triple-Key Authenticator",
+      "createdAt": "2026-03-20T00:00:00Z",
+      "url": "https://github.com/Fraz133/PUF-Authenticator.git",
+      "description": "Highly secure identity verification system leveraging spatial, intensity, and temporal (phosphorescent decay) Physical Unclonable Functions (PUF).",
       "isFork": false,
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Flutter",
+          "iconifyClass": "logos-flutter"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "logos:mongodb"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos:opencv"
         }
       ]
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "id": "project-personalens",
+      "name": "PersonaLensAR - AR Face Recognition",
+      "createdAt": "2026-02-18T00:00:00Z",
+      "url": "https://github.com/Fraz133/PersonaLensAR",
+      "description": "Mixed Reality face recognition system for Meta Quest 3 matching face embeddings in Qdrant with real-time LinkedIn/GitHub crawling and AI profile summarization.",
       "isFork": false,
       "languages": [
+        {
+          "name": "Unity",
+          "iconifyClass": "logos:unity"
+        },
+        {
+          "name": "C#",
+          "iconifyClass": "logos:c-sharp"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Qdrant",
+          "iconifyClass": "logos:qdrant"
+        }
+      ]
+    },
+    {
+      "id": "project-petconnect",
+      "name": "PetConnect App",
+      "createdAt": "2026-01-05T00:00:00Z",
+      "url": "https://github.com/Fraz133/PetConnect",
+      "description": "A social network for pets with email auth, media posts, 24h stories, marketplace, real-time messaging, Google Maps vet finder, and a Gemini AI Pet assistant.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Flutter",
+          "iconifyClass": "logos-flutter"
+        },
+        {
+          "name": "Dart",
+          "iconifyClass": "logos:dart"
+        },
+        {
+          "name": "Firebase",
+          "iconifyClass": "logos-firebase"
+        }
+      ]
+    },
+    {
+      "id": "project-ai-jewellery",
+      "name": "LuxeGem AI - Jewelry Design Platform",
+      "createdAt": "2025-12-10T00:00:00Z",
+      "url": "https://github.com/Fraz133/AI-Jewellery-Generator",
+      "description": "A modern, AI-powered jewelry design platform featuring text-to-design generation, interactive studios, responsive luxury aesthetics, and glassmorphic UI design.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "project-omni-fs",
+      "name": "Omni File System (OFS)",
+      "createdAt": "2025-11-12T00:00:00Z",
+      "url": "https://github.com/Fraz133/TextAtlas",
+      "description": "Custom binary file system format (.omni) built in C++17 featuring user session authentication, bitmap space allocation, and a RESTful web dashboard interface.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos-c-plusplus"
+        },
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos-html-5"
+        },
         {
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Makefile",
+          "iconifyClass": "logos-makefile"
+        }
+      ]
+    },
+    {
+      "id": "project-guide-cypress",
+      "name": "Guide2Cypress Extension",
+      "createdAt": "2025-09-08T00:00:00Z",
+      "url": "https://github.com/Fraz133/Guide2CypressExtension",
+      "description": "VS Code IDE extension offering Cypress E2E automation snippets, quick documentation shortcuts, and inline test triggers directly from code view.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript"
+        },
+        {
+          "name": "NodeJS",
+          "iconifyClass": "logos:nodejs"
+        },
+        {
+          "name": "VS Code API",
+          "iconifyClass": "logos-visual-studio-code"
+        }
+      ]
+    },
+    {
+      "id": "project-voice-deepfake",
+      "name": "Voice Deepfake Detection System",
+      "createdAt": "2026-06-10T00:00:00Z",
+      "url": "https://github.com/Fraz133/VoiceDeepfakeDetectionSystem.git",
+      "description": "Comprehensive AI-powered system for detecting synthetic audio. Combines PyTorch CNN (MobileNetV3) and Hugging Face (Wav2Vec2) transformers with FastAPI backend and real-time HTML5 Canvas waveform visualization.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos-pytorch"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
         }
       ]
     }

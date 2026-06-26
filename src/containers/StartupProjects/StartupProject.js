@@ -1,5 +1,5 @@
 import React from "react";
-import "./StartupProjects.css";
+import "../../styles/containers/StartupProjects/StartupProjects.css";
 import { bigProjects } from "../../portfolio";
 
 export default function StartupProject() {
@@ -21,7 +21,11 @@ export default function StartupProject() {
                   className="saaya-health-div"
                   onClick={() => openProjectInNewWindow(project.link)}
                 >
-                  <img alt="Saad Working" src={project.image}></img>
+                  <img
+                    loading="lazy"
+                    alt="Saad Working"
+                    src={project.image}
+                  ></img>
                 </div>
               );
             })}

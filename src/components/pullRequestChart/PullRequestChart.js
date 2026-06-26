@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Fade } from "react-reveal";
-import "./PullRequestChart.css";
+import "../../styles/components/pullRequestChart/PullRequestChart.css";
 import PullRequestData from "../../shared/opensource/pull_requests.json";
 
 class PullRequestChart extends Component {

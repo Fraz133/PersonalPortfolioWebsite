@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import "../../styles/components/button/Button.css";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;
@@ -19,7 +19,8 @@ export default function Button({ text, className, href, newTab, theme }) {
       <a
         className="main-button"
         href={href}
-        target={newTab && "_blank"}
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
         style={{
           color: theme.body,
           backgroundColor: theme.text,

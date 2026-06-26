@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./OrganizationList.css";
+import "../../styles/components/organizationList/OrganizationList.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
@@ -23,6 +23,7 @@ class OrganizationList extends Component {
                 <li className="organizations-inline" name={logo["login"]}>
                   <Fade bottom duration={2000} distance="40px">
                     <img
+                      loading="lazy"
                       className="organizations-img"
                       src={logo["avatarUrl"]}
                       alt={logo["login"]}

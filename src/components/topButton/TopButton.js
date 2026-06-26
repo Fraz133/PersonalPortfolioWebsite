@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopButton.css";
+import "../../styles/components/topButton/TopButton.css";
 
 export default function TopButton({ theme }) {
   function GoUpEvent() {

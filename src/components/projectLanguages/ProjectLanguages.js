@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ProjectLanguages.css";
+import "../../styles/components/projectLanguages/ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class ProjectLanguages extends Component {

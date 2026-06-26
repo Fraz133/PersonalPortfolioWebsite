@@ -1,5 +1,5 @@
 import React from "react";
-import "./PublicationCard.css";
+import "../../styles/components/publicationsCard/PublicationCard.css";
 import { Fade } from "react-reveal";
 
 export default function PublicationCard({ pub, theme }) {

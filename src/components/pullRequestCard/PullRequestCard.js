@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./PullRequestCard.css";
+import "../../styles/components/pullRequestCard/PullRequestCard.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
@@ -53,6 +53,7 @@ class PullRequestCard extends Component {
             rel="noopener noreferrer"
           >
             <img
+              loading="lazy"
               className="merge-by-img"
               src={pullRequest["mergedBy"]["avatarUrl"]}
               alt=""
@@ -133,6 +134,7 @@ class PullRequestCard extends Component {
                 rel="noopener noreferrer"
               >
                 <img
+                  loading="lazy"
                   className="owner-img"
                   src={pullRequest["baseRepository"]["owner"]["avatarUrl"]}
                   alt=""

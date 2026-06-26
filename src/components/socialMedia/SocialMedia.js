@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialMedia.css";
+import "../../styles/components/socialMedia/SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 import styled from "styled-components";
 

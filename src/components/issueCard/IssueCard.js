@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./IssueCard.css";
+import "../../styles/components/issueCard/IssueCard.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
@@ -44,6 +44,7 @@ class IssueCard extends Component {
             rel="noopener noreferrer"
           >
             <img
+              loading="lazy"
               className="assigned-to-img"
               src={issue["assignees"]["nodes"][0]["avatarUrl"]}
               alt=""
@@ -124,6 +125,7 @@ class IssueCard extends Component {
                 rel="noopener noreferrer"
               >
                 <img
+                  loading="lazy"
                   className="owner-img"
                   src={issue["repository"]["owner"]["avatarUrl"]}
                   alt=""

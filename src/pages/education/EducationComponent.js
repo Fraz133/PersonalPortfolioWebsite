@@ -8,7 +8,7 @@ import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites
 import EducationImg from "./EducationImg";
 import { competitiveSites } from "../../portfolio";
 import { certifications } from "../../portfolio";
-import "./EducationComponent.css";
+import "../../styles/pages/education/EducationComponent.css";
 import { Fade } from "react-reveal";
 
 class Education extends Component {
@@ -21,7 +21,7 @@ class Education extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
               <div className="heading-img-div">
-                {/* <img
+                {/* <img loading="lazy"
 									src={require("../../assets/images/education.svg")}
 									alt=""
 								/> */}

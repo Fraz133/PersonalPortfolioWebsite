@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ToggleSwitch.scss";
+import "../../styles/components/footer/ToggleSwitch.scss";
 import { lightTheme } from "../../theme";
 import styled from "styled-components";
 
