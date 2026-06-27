@@ -104,6 +104,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .ripple {
@@ -410,4 +411,73 @@
     width: 220px;
     justify-content: center;
   }
+}
+
+@media (min-width: 769px) {
+  .contact-heading-text-div {
+    padding-left: 80px;
+  }
+  .blog-heading-text-div {
+    padding-right: 80px;
+  }
+  .phone-heading-text-div {
+    padding-left: 80px;
+  }
+  .address-heading-text-div {
+    padding-right: 80px;
+  }
+}
+
+/* Resume button Uiverse style */
+.resume-btn-alexroumi {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121 !important;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 800;
+  font-size: 17px;
+  font-family: "Google Sans Medium", sans-serif;
+  text-decoration: none;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.resume-btn-alexroumi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.resume-btn-alexroumi:hover {
+  color: #e8e8e8 !important;
+}
+
+.resume-btn-alexroumi:hover::before {
+  width: 100%;
+}
+
+.resume-btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  z-index: 2;
 }

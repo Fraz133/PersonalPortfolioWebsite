@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+import AnimatedButton from "../../components/animatedButton/AnimatedButton";
 import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import PhoneImg from "./PhoneImg";
@@ -22,7 +22,7 @@ class Contact extends Component {
     const theme = this.props.theme;
     return (
       <div className="contact-main">
-        <Header theme={theme} />
+        <Header theme={theme} onToggle={this.props.onToggle} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
@@ -69,7 +69,16 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
-                  <Button text="See My Resume" href="/resume" theme={theme} />
+                  <a className="resume-btn-alexroumi" href="/resume">
+                    <svg
+                      className="resume-btn-icon"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+                    </svg>
+                    <span>See My Resume</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -87,7 +96,7 @@ class Contact extends Component {
                   {blogSection["subtitle"]}
                 </p>
                 <div className="blogsite-btn-div">
-                  <Button
+                  <AnimatedButton
                     text="Email Me"
                     newTab={true}
                     href={blogSection.link}
@@ -131,25 +140,11 @@ class Contact extends Component {
                     </svg>
                     <span>WhatsApp Me</span>
                   </a>
-                  <a
-                    className="call-btn"
+                  <AnimatedButton
+                    text="Call Me"
                     href={phoneSection.phone_number}
-                    style={{
-                      backgroundColor: theme.text,
-                      color: theme.body,
-                      border: `solid 1px ${theme.text}`,
-                    }}
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                    >
-                      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
-                    </svg>
-                    <span>Call Me</span>
-                  </a>
+                    theme={theme}
+                  />
                 </div>
               </div>
             </div>
@@ -173,7 +168,7 @@ class Contact extends Component {
                   {addressSection["subtitle"]}
                 </p>
                 <div className="address-btn-div">
-                  <Button
+                  <AnimatedButton
                     text="Visit on Google Maps"
                     newTab={true}
                     href={addressSection.location_map_link}

@@ -154,17 +154,17 @@ export const yellowTheme = {
 };
 
 export const materialDarkTheme = {
-  body: "#263238",
-  text: "#aeaeae",
-  expTxtColor: "#000a12",
-  highlight: "#4f5b62",
-  dark: "#000a12",
-  secondaryText: "#aeaeae",
-  imageHighlight: "#607d8b",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#8eacbb",
-  headerColor: "#34515e",
-  splashBg: "#4f5b62",
+  body: "#1D2A30", // Deeper dark slate blue-grey
+  text: "#FFFFFF", // Pure crisp white for primary text readability
+  expTxtColor: "#FFFFFF", // Pure white experience card text
+  highlight: "#34515E", // Lighter accent slate for cards
+  dark: "#0F171A", // Deeper background accent
+  secondaryText: "#ECEFF1", // Light contrast grey-blue for secondary details
+  imageHighlight: "#607D8B",
+  compImgHighlight: "#1D2A30",
+  jacketColor: "#8EACBB",
+  headerColor: "#263238", // Slightly darker header background
+  splashBg: "#34515E",
 };
 
 export const materialLightTheme = {
