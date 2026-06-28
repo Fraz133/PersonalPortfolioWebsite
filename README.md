@@ -42,5 +42,6 @@ To run this project locally on your machine:
 ## Contact
 
 - **Email**: frazliaqat1116@gmail.com
-- **LinkedIn**: [Fraz Liaqat](https://www.linkedin.com/in/frazliaqat/)
+- **LinkedIn**: [Fraz Liaqat](https://www.linkedin.com/in/fraz-liaqat-968b52268/)
 - **GitHub**: [Fraz133](https://github.com/Fraz133)
+- **Portfolio**: [FrazLiaqatonline](https://frazliaqat.online/)
