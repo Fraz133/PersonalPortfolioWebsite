@@ -3,53 +3,176 @@ import "../../styles/components/Loader/LoaderLogo.css";
 
 class LogoLoader extends React.Component {
   render() {
-    const theme = this.props.theme;
     return (
-      <svg
-        className="raw_logo"
-        width="50%"
-        height="40%"
-        viewBox="0 0 440 305"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          className="myHexagon"
-          d="M293.545 167.405L229.5 204.381C227.025 205.81 223.975 205.81 221.5 204.381L157.455 167.405C154.98 165.976 153.455 163.335 153.455 160.476L153.455 86.5234C153.455 83.6653 154.98 81.0243 157.455 79.5952L221.5 42.6187C223.975 41.1896 227.025 41.1897 229.5 42.6187L293.545 79.5952C296.02 81.0243 297.545 83.6653 297.545 86.5234L297.545 160.476C297.545 163.335 296.02 165.976 293.545 167.405Z"
-          stroke={theme.body}
-          strokeWidth="4"
-        />
-        <path
-          className="myHexagon"
-          d="M147.455 73.5953L211.5 36.6188C213.975 35.1898 217.025 35.1898 219.5 36.6188L283.545 73.5953C286.02 75.0244 287.545 77.6654 287.545 80.5235L287.545 154.477C287.545 157.335 286.02 159.976 283.545 161.405L219.5 198.381C217.025 199.81 213.975 199.81 211.5 198.381L147.455 161.405C144.98 159.976 143.455 157.335 143.455 154.477L143.455 80.5235C143.455 77.6654 144.98 75.0244 147.455 73.5953Z"
-          stroke={theme.body}
-          strokeWidth="4"
-        />
-        <text
-          className="logo_text"
-          x="225"
-          y="140"
-          fill={theme.body}
-          fontSize="56"
-          fontFamily='"Montserrat", "Google Sans Bold", Arial, sans-serif'
-          fontWeight="bold"
-          textAnchor="middle"
-        >
-          FL
-        </text>
-        <text
-          className="logo_signature"
-          x="225"
-          y="270"
-          fill={theme.body}
-          fontSize="48"
-          fontFamily='"Agustina Regular", "Caveat", "Dancing Script", cursive'
-          fontWeight="normal"
-          textAnchor="middle"
-        >
-          Fraz Liaqat
-        </text>
-      </svg>
+      <div className="main-container">
+        <div className="loader">
+          <svg
+            style={{ width: "100%", height: "100%" }}
+            viewBox="0 -100 900 1100"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <defs>
+              <pattern
+                id="gridPattern"
+                width="100"
+                height="100"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 100 0 L 0 0 0 100"
+                  fill="none"
+                  stroke="#222"
+                  strokeWidth="0.5"
+                />
+              </pattern>
+
+              <linearGradient
+                id="traceGradient1"
+                x1="250"
+                y1="120"
+                x2="100"
+                y2="200"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stopColor="#2ba8fb" stopOpacity="1"></stop>
+                <stop
+                  offset="100%"
+                  stopColor="#2ba8fb"
+                  stopOpacity="0.5"
+                ></stop>
+              </linearGradient>
+
+              <linearGradient
+                id="traceGradient2"
+                x1="650"
+                y1="120"
+                x2="800"
+                y2="300"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stopColor="#2ba8fb" stopOpacity="1"></stop>
+                <stop
+                  offset="100%"
+                  stopColor="#2ba8fb"
+                  stopOpacity="0.5"
+                ></stop>
+              </linearGradient>
+
+              <linearGradient
+                id="traceGradient3"
+                x1="250"
+                y1="380"
+                x2="400"
+                y2="400"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stopColor="#2ba8fb" stopOpacity="1"></stop>
+                <stop
+                  offset="100%"
+                  stopColor="#2ba8fb"
+                  stopOpacity="0.5"
+                ></stop>
+              </linearGradient>
+
+              <linearGradient
+                id="traceGradient4"
+                x1="650"
+                y1="120"
+                x2="500"
+                y2="100"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stopColor="#2ba8fb" stopOpacity="1"></stop>
+                <stop
+                  offset="100%"
+                  stopColor="#2ba8fb"
+                  stopOpacity="0.5"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <rect
+              x="-2000"
+              y="-2000"
+              width="5000"
+              height="5000"
+              fill="url(#gridPattern)"
+            />
+
+            <g id="browser" transform="translate(0, 200)">
+              <rect
+                x="250"
+                y="120"
+                width="400"
+                height="260"
+                rx="8"
+                ry="8"
+                className="browser-frame"
+              ></rect>
+              <rect
+                x="250"
+                y="120"
+                width="400"
+                height="30"
+                rx="8"
+                ry="8"
+                className="browser-top"
+              ></rect>
+              <text
+                x="294"
+                y="140"
+                textAnchor="middle"
+                className="loading-text"
+              >
+                Loading...
+              </text>
+              <rect
+                x="270"
+                y="160"
+                width="360"
+                height="20"
+                className="skeleton"
+              ></rect>
+              <rect
+                x="270"
+                y="190"
+                width="200"
+                height="15"
+                className="skeleton"
+              ></rect>
+              <rect
+                x="270"
+                y="215"
+                width="300"
+                height="15"
+                className="skeleton"
+              ></rect>
+              <rect
+                x="270"
+                y="240"
+                width="360"
+                height="90"
+                className="skeleton"
+              ></rect>
+              <rect
+                x="270"
+                y="340"
+                width="180"
+                height="20"
+                className="skeleton"
+              ></rect>
+            </g>
+
+            <g id="traces" transform="translate(0, 200)">
+              <path d="M100 300 H250 V120" className="trace-flow"></path>
+              <path d="M800 200 H650 V380" className="trace-flow"></path>
+              <path d="M400 520 V380 H250" className="trace-flow"></path>
+              <path d="M500 50 V120 H650" className="trace-flow"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
     );
   }
 }

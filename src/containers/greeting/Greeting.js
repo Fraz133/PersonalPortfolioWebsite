@@ -5,6 +5,8 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import GreetingImage from "./GreetingImage";
 
+import Typewriter from "../../components/Typewriter/Typewriter";
+
 export default function Greeting(props) {
   const theme = props.theme;
   const [repoStars, setRepoStars] = useState(6);
@@ -39,9 +41,21 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              {greeting.nickname && (
-                <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                  ( {greeting.nickname} )
+              {greeting.animatedRoles && greeting.animatedRoles.length > 0 && (
+                <h2
+                  className="greeting-nickname"
+                  style={{
+                    color: theme.imageHighlight,
+                    marginTop: "10px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  <Typewriter
+                    strings={greeting.animatedRoles}
+                    typingSpeed={80}
+                    deletingSpeed={50}
+                    pauseTime={2000}
+                  />
                 </h2>
               )}
               <p

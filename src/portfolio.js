@@ -32,6 +32,12 @@ const greeting = {
   title: "Fraz Liaqat",
   logo_name: "F",
   nickname: "fraz",
+  animatedRoles: [
+    "MERN Stack Developer",
+    "Flutter Developer",
+    "AI Engineer",
+    "Freelancer",
+  ],
   subTitle:
     "MERN Stack & Flutter Developer | AI Engineer. I build scalable web applications, mobile applications, and intelligent software systems.",
   resumeLink:

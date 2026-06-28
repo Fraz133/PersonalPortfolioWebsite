@@ -39,8 +39,9 @@
 
 .greeting-nickname {
   font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  line-height: 1.2;
+  font-family: "Consolas", monospace;
+  font-weight: 500;
 }
 
 .greeting-text-p {
