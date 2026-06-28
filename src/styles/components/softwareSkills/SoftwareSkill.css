@@ -12,14 +12,29 @@
   margin-right: 20px;
   margin-bottom: 20px;
   font-family: "Google Sans Regular";
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .software-skill-inline > i {
   color: #868e96;
+  transition: all 0.5s ease;
 }
 
 .software-skill-inline > i:hover {
   color: #645beb;
+}
+
+.software-skill-inline:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 10px rgba(111, 197, 255, 0.8));
+}
+
+.software-skill-inline:active {
+  transform: scale(0.95);
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 
 .skill-image {

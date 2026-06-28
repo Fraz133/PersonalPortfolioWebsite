@@ -56,7 +56,7 @@ export default function Greeting(props) {
                   className="github-star-btn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={greeting.portfolio_repository}
+                  href={greeting.githubProfile}
                 >
                   <span className="github-star-btn-shine"></span>
                   <div className="github-star-btn-left">

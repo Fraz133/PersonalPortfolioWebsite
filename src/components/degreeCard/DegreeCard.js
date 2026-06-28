@@ -10,22 +10,17 @@ class DegreeCard extends Component {
       <div className="degree-card">
         {degree.logo_path && (
           <Flip left duration={2000}>
-            <div
-              className="card-img"
-              style={{
-                backgroundColor: "#ffffff",
-              }}
-            >
-              <img
-                loading="lazy"
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(0.9)",
-                }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
-                alt={degree.alt_name}
-              />
+            <div className="logo-3d-parent">
+              <div className="logo-3d-card">
+                <div className="logo-3d-content-box">
+                  <img
+                    loading="lazy"
+                    className="logo-3d-img"
+                    src={require(`../../assets/images/${degree.logo_path}`)}
+                    alt={degree.alt_name}
+                  />
+                </div>
+              </div>
             </div>
           </Flip>
         )}

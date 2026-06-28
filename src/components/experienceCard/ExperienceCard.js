@@ -20,12 +20,18 @@ class ExperienceCard extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                loading="lazy"
-                className="experience-card-logo"
-                src={require(`../../assets/images/${experience["logo_path"]}`)}
-                alt=""
-              />
+              <div className="logo-3d-parent experience-logo-parent">
+                <div className="logo-3d-card">
+                  <div className="logo-3d-content-box">
+                    <img
+                      loading="lazy"
+                      className="logo-3d-img"
+                      src={require(`../../assets/images/${experience["logo_path"]}`)}
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </a>
           </div>
         </Fade>

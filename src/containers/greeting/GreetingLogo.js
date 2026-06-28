@@ -33,7 +33,7 @@ export default function GreetingLogo(props) {
         fontWeight="bold"
         textAnchor="middle"
       >
-        FL
+        F
       </text>
       <text
         className="greeting-logo-signature"

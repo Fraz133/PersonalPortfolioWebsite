@@ -7,13 +7,18 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Fraz Liaqat | Faraz Liaqat | Portfolio",
+  title:
+    "Fraz Liaqat Portfolio | MERN Developer | Flutter Developer | AI Engineer",
   description:
-    "Fraz Liaqat (also known as Faraz Liaqat) is a passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "Fraz Liaqat is a Computer Science student, MERN Stack Developer, Flutter Developer, and AI Engineer specializing in modern web and mobile applications. Explore projects, skills, and professional work.",
   og: {
-    title: "Fraz Liaqat | Faraz Liaqat Portfolio",
+    title:
+      "Fraz Liaqat Portfolio | MERN Developer | Flutter Developer | AI Engineer",
     type: "website",
     url: "https://frazliaqat.online/",
+    image: "https://frazliaqat.online/og-image.png",
+    description:
+      "Building modern web applications, AI solutions and software systems",
   },
   sameAs: [
     "https://github.com/Fraz133",
@@ -24,10 +29,10 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Fraz Liaqat",
-  logo_name: "FL",
+  logo_name: "F",
   nickname: "fraz",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "MERN Stack & Flutter Developer | AI Engineer. I build scalable web applications, mobile applications, and intelligent software systems.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/Fraz133/masterPortfolio",

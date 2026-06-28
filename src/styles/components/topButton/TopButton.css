@@ -4,8 +4,54 @@
   bottom: 1.2rem;
   right: 1.5rem;
   cursor: pointer;
-  padding: 15px;
   outline: none;
-  border-radius: 2rem;
-  font-size: 1.5rem;
+  z-index: 999;
+
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  font-size: 15px;
+  border: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.05);
+
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+#topButton::before {
+  content: "";
+  width: 0;
+  height: 4em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: 1;
+}
+
+#topButton:hover::before {
+  width: 4em;
+}
+
+#topButton:hover {
+  color: #141414 !important;
+}
+
+#arrow {
+  font-size: 18px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+#topButton:hover #arrow {
+  transform: translateY(-4px);
 }

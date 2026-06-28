@@ -234,8 +234,13 @@
 
 .tech-tag:hover {
   background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px) scale(1.05) !important;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px) scale(1.1) !important;
+  box-shadow: 0 0 20px rgba(111, 197, 255, 0.5);
+}
+
+.tech-tag:active {
+  transform: scale(0.98) !important;
+  transition: all 0.25s;
 }
 
 /* The actual image */
