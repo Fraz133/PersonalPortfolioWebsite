@@ -11,6 +11,7 @@ const seo = {
     "Fraz Liaqat Portfolio | MERN Developer | Flutter Developer | AI Engineer",
   description:
     "Fraz Liaqat is a Computer Science student, MERN Stack Developer, Flutter Developer, and AI Engineer specializing in modern web and mobile applications. Explore projects, skills, and professional work.",
+  alternateName: ["Faraz Liaqat", "Fraz Liaquat", "Faraz Liaquat"],
   og: {
     title:
       "Fraz Liaqat Portfolio | MERN Developer | Flutter Developer | AI Engineer",

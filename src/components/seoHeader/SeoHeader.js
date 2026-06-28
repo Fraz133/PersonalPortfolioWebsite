@@ -42,6 +42,7 @@ function SeoHeader() {
     "@context": "https://schema.org/",
     "@type": "Person",
     name: greeting.title,
+    alternateName: seo.alternateName,
     url: seo?.og?.url,
     description: seo.description,
     email: mail,
