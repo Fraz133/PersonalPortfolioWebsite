@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <style>
+    .bracket { fill: #001c55; font-weight: bold; }
+    .letter { fill: #FF6B35; font-weight: bold; }
+    @media (prefers-color-scheme: dark) {
+      .bracket { fill: #ffffff; }
+    }
+  </style>
+  <text class="bracket" x="18" y="65" font-size="52" font-family="Montserrat, system-ui, sans-serif" text-anchor="middle">&lt;</text>
+  <text class="letter" x="50" y="65" font-size="56" font-family="Montserrat, system-ui, sans-serif" text-anchor="middle">F</text>
+  <text class="bracket" x="82" y="65" font-size="52" font-family="Montserrat, system-ui, sans-serif" text-anchor="middle">/&gt;</text>
+</svg>
